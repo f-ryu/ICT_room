@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ホーム</title>
+    <link rel="stylesheet" href="{% static "css/home_style.css" %}"/>
+    <style media="screen">
+        .inbtn{
+            position: relative;
+            top: 15cm;
+        }
+        .outbtn{
+            position: relative;
+            top: 21.5cm;
+        }
+        .log-outbtn{
+            position: relative;
+            top: 30cm;
+        }
+        </style>
+</head>
+<body>
+<div style="text-align: right">
+    <p>入室中：{{ room }}</p>
+</div>
+<div class="inbtn" style="text-align: center">
+    <a href='in_confirmation' class="btn btn--in">入　室</a>
+</div>
+
+<div class="outbtn" style="text-align: center">
+    <a href='exit_confirmation' class="btn btn--out">退　室</a>
+</div>
+
+<div class="log-outbtn" style="text-align: right">
+    <a href='logout_ok' class="btn btn--logout">ログアウト</a>
+</div>
+
+</body>
+</html>

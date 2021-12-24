@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>退室確認</title>
+    <link rel="stylesheet" href="{% static "css/out_confirmation_style.css" %}"/>
+    <style media="screen">
+        .text{
+            position: relative;
+            top: 5cm;
+        }
+        .okbtn{
+            position: relative;
+            top: 15cm;
+        }
+        .nobtn{
+            position: relative;
+            top: 21.5cm;
+        }
+    </style>
+</head>
+<body>
+<div class="text">
+    <pre>{{ room }}から
+    退室しますか？</pre>
+</div>
+<div class="okbtn">
+    <a href='exit_ok' class="btn btn--yes">は　い</a>
+</div>
+<div class="nobtn">
+    <a href='home' class="btn btn--no">いいえ</a>
+</div>
+</body>
+<style>
+    body{
+        text-align: center;
+    }
+</style>
+</html>

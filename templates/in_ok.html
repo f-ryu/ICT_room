@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>入室完了</title>
+    <link rel="stylesheet" href="{% static "css/in_ok.css" %}"/>
+    <style media="screen">
+        .text{
+            position: relative;
+            top: 5cm;
+        }
+        .okbtn{
+            position: relative;
+            top: 16.5cm;
+        }
+        </style>
+</head>
+<body>
+<div class="text" style="text-align: center">
+    <p>{{ room }}</p>
+    <pre>入室</pre>
+    <p>しました</p>
+</div>
+<div class="okbtn" style="text-align: center">
+    <a href='home' class="btn btn--ok">O K</a>
+</div>
+</body>
+</html>

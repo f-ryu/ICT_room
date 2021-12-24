@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>退室完了</title>
+    <link rel="stylesheet" href="{% static "css/exit_ok_style.css" %}"/>
+    <style media="screen">
+        .text{
+            position: relative;
+            top: 15cm;
+        }
+        .okbtn{
+            position: relative;
+            top: 27.5cm;
+        }
+    </style>
+</head>
+<body>
+<div class="text">
+    <p>退室しました。</p>
+</div>
+
+<div class="okbtn">
+    <a href='home' class="btn btn--ok">O K</a>
+</div>
+</body>
+<style>
+    body{
+        text-align: center;
+    }
+</style>
+</html>

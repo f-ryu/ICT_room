@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>入室確認</title>
+    <link rel="stylesheet" href="{% static "css/in_confirmation_style.css" %}"/>
+    <style media="screen">
+        .text{
+            position: relative;
+            top: 2cm;
+        }
+        .qtn-one{
+            position: relative;
+            top: 16cm;
+        }
+        .qtn-two{
+            position: relative;
+            top: 21cm;
+        }
+        .okbtn{
+            position: relative;
+            top: 28.5cm;
+        }
+    </style>
+</head>
+<body>
+<div class="text" style="text-align: center" >
+    <p>入室確認</p>
+</div>
+<div class="qtn-one" style="text-align: center">
+  <input type="checkbox" style="width: 50px; height: 50px">
+    <label>&nbsp;37.5℃ 以下ですか？</label><br>
+    <br>
+</div>
+<div class="qtn-two" style="text-align: center">
+  <input type="checkbox" style="width: 50px; height: 50px">
+    <label>バスを利用しましたか？</label>
+</div>
+<div class="okbtn" style="text-align: center">
+    <a href='qr_reading' class="btn btn--ok">O K</a>
+</div>
+</body>
+</html>
