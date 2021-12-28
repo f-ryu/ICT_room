@@ -4,11 +4,11 @@ SQR.reader = (() => {
     /**
      * getUserMedia()に非対応の場合は非対応の表示をする
      */
-    const showUnsuportedScreen = () => {
+    const showUnsupportedScreen = () => {
         document.querySelector('#js-unsupported').classList.add('is-show')
     }
     if (!navigator.mediaDevices) {
-        showUnsuportedScreen()
+        showUnsupportedScreen()
         return
     }
 
@@ -69,7 +69,9 @@ SQR.reader = (() => {
             .getUserMedia({
                 audio: false,
                 video: {
-                    facingMode: { exact: "environment" }
+                    facingMode: {
+                        exact: 'environment'
+                    }
                 },
             })
             .then((stream) => {
@@ -80,7 +82,7 @@ SQR.reader = (() => {
                 }
             })
             .catch(() => {
-                showUnsuportedScreen()
+                showUnsupportedScreen()
             })
     }
 

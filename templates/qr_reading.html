@@ -21,25 +21,30 @@
   <canvas id="js-canvas"></canvas>
 </div>
 
-<div id="js-modal" class="modal-overlay">
-  <div class="modal">
-    <div class="modal-cnt">
-      <span class="modal-title">読み取り結果</span>
-      <span id="js-result" class="modal-result"></span>
-    </div>
-    <a href="" id="js-link" class="modal-btn" target="_blank">開く</a>
-      <button id="js-copy" class="modal-btn" target="_blank">コピー</button>
-    <button type="button" id="js-modal-close" class="modal-btn">閉じる</button>
-  </div>
-</div>
+        <div id="js-modal" class="modal-overlay">
+            <div class="modal">
+                <div class="modal-cnt">
+                    <span class="modal-title">読み取り結果</span>
+                    <textarea
+                            id="js-result"
+                            class="modal-result"
+                            value=""
+                            readonly
+                    /></textarea>
+                </div>
+                <a href="" id="js-link" class="modal-btn" target="_blank">開く</a>
+                <button id="js-copy" class="modal-btn" target="_blank">コピー</button>
+                <button type="button" id="js-modal-close" class="modal-btn">閉じる</button>
+            </div>
+        </div>
 
  <div id="js-unsupported" class="unsupported">
      <p class="unsupported-title">Sorry!</p>
      <p>Unsupported browser</p>
  </div>
 
-<script src="{% static 'js/app.js' %}"></script>
 <script src="{% static 'js/jsQR.js' %}"></script>
+<script src="{% static 'js/app.js' %}"></script>
 
 </body>
 </html>
